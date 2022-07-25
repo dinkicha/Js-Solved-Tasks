@@ -1,7 +1,11 @@
-# all-the-tasks-I-solve
+# all-the-tasks-I-solve ✅
 
-Adding the tasks I have to do throughout my journey!
+• Hello everyone! 👋
 
-Contact me here: dinkoproto2@gmail.com
+• Adding the tasks I have to do throughout my journey! 😁
 
-By dinko:
+• Adding new tasks everytime when completing a new material! 🔥
+
+• Contact me here: dinkoproto2@gmail.com 📧
+
+• By dinko: 🤜🤛
