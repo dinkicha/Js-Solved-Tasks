@@ -8,4 +8,4 @@
 
 • Contact me here: dinkoproto2@gmail.com 📧
 
-• By dinko: 🤜🤛
+• By dinkicha: 🤜🤛
