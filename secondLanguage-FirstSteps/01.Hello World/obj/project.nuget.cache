@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "NkI4SaiJ9+bu6gbxdyma3CfscRG8dZ9g98iH+sUZouErBdYlxlUbeSHaS8pAOsufUHnSXDHFqIwNXbm/H+aTDw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dinko\\OneDrive\\Desktop\\test_repo\\secondLanguage-FirstSteps\\01.Hello World\\01.Hello World.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dinko\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}
