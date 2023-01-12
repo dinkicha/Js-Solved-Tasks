@@ -11,11 +11,11 @@ function wordsTracker(input) {
         }
     }
     let sorted = Object.entries(result);
-    console.log(sorted);
-    // sorted.sort((a, b) => b[1] - a[1]);
-    // for (const [word, count] of sorted) {
-    //     console.log(`${word} - ${count}`);
-    // }
+    
+    sorted.sort((a, b) => b[1] - a[1]);
+    for (const [word, count] of sorted) {
+        console.log(`${word} - ${count}`);
+    }
 }
 wordsTracker([
     "this sentence",
