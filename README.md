@@ -6,6 +6,6 @@
 
 • Adding new tasks everytime when completing a new material! 🔥
 
-• Contact me here: dinkoproto2@gmail.com 📧
+• Contact me here: gospodinovg554@gmail.com 📧
 
 • By dinkicha: 🤜🤛
