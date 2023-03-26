@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=\, initial-scale=1.0" />
+  <link rel="stylesheet" href="./styles/styles.css" />
+  <title>Music Library</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <!-- Navigation -->
+      <a id="logo" href="/"><img id="logo-img" src="./images/logo.png" alt="" /></a>
+
+      <nav>
+        <div>
+          <a href="#">Dashboard</a>
+        </div>
+
+        <!-- Logged-in users -->
+        <div class="user">
+          <a href="#">Add Album</a>
+          <a href="#">Logout</a>
+        </div>
+
+        <!-- Guest users -->
+        <div class="guest">
+          <a href="#">Login</a>
+          <a href="#">Register</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home page -->
+      <section id="home">
+        <img src="./images/landing.png" alt="home" />
+
+        <h2 id="landing-text"><span>Add your favourite albums</span> <strong>||</strong> <span>Discover new ones right
+            here!</span></h2>
+      </section>
+
+      <!-- Dashboard page -->
+      <section id="dashboard">
+        <h2>Albums</h2>
+        <ul class="card-wrapper">
+          <!-- Display a li with information about every post (if any)-->
+          <li class="card">
+            <img src="./images/BackinBlack.jpeg" alt="travis" />
+            <p>
+              <strong>Singer/Band: </strong><span class="singer">AC/DC</span>
+            </p>
+            <p>
+              <strong>Album name: </strong><span class="album">Back in Black</span>
+            </p>
+            <p><strong>Sales:</strong><span class="sales">26 million (50 million claimed)</span></p>
+            <a class="details-btn" href="">Details</a>
+          </li>
+          <li class="card">
+            <img src="./images/beatles-1.jpg" alt="travis" />
+            <p>
+              <strong>Singer/Band: </strong><span class="singer">The Beatles</span>
+            </p>
+            <p>
+              <strong>Album name: </strong><span class="album">1</span>
+            </p>
+            <p><strong>Sales:</strong><span class="sales">26 million (31 million claimed)</span></p>
+            <a class="details-btn" href="">Details</a>
+          </li>
+          <li class="card">
+            <img src="./images/pink-floyd-the-wall.jpeg" alt="travis" />
+            <p>
+              <strong>Singer/Band: </strong><span class="singer">Pink Floyd</span>
+            </p>
+            <p>
+              <strong>Album name: </strong><span class="album">The Wall</span>
+            </p>
+            <p><strong>Sales:</strong><span class="sales">18 million (30 million claimed)</span></p>
+            <a class="details-btn" href="">Details</a>
+          </li>
+        </ul>
+
+        <!-- Display an h2 if there are no posts -->
+        <h2>There are no albums added yet.</h2>
+      </section>
+
+      <!-- Register Page (Only for Guest users) -->
+      <section id="register">
+        <div class="form">
+          <h2>Register</h2>
+          <form class="login-form">
+            <input type="text" name="email" id="register-email" placeholder="email" />
+            <input type="password" name="password" id="register-password" placeholder="password" />
+            <input type="password" name="re-password" id="repeat-password" placeholder="repeat password" />
+            <button type="submit">register</button>
+            <p class="message">Already registered? <a href="#">Login</a></p>
+          </form>
+        </div>
+      </section>
+
+      <!-- Login Page (Only for Guest users) -->
+      <section id="login">
+        <div class="form">
+          <h2>Login</h2>
+          <form class="login-form">
+            <input type="text" name="email" id="email" placeholder="email" />
+            <input type="password" name="password" id="password" placeholder="password" />
+            <button type="submit">login</button>
+            <p class="message">
+              Not registered? <a href="#">Create an account</a>
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <!-- Create Page (Only for logged-in users) -->
+      <section id="create">
+        <div class="form">
+          <h2>Add Album</h2>
+          <form class="create-form">
+            <input type="text" name="singer" id="album-singer" placeholder="Singer/Band" />
+            <input type="text" name="album" id="album-album" placeholder="Album" />
+            <input type="text" name="imageUrl" id="album-img" placeholder="Image url" />
+            <input type="text" name="release" id="album-release" placeholder="Release date" />
+            <input type="text" name="label" id="album-label" placeholder="Label" />
+            <input type="text" name="sales" id="album-sales" placeholder="Sales" />
+
+            <button type="submit">post</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Details page -->
+      <section id="details">
+        <div id="details-wrapper">
+          <p id="details-title">Album Details</p>
+          <div id="img-wrapper">
+            <img src="./images/BackinBlack.jpeg" alt="example1" />
+          </div>
+          <div id="info-wrapper">
+            <p><strong>Band:</strong><span id="details-singer">AC/DC</span></p>
+            <p>
+              <strong>Album name:</strong><span id="details-album">Back in Black</span>
+            </p>
+            <p><strong>Release date:</strong><span id="details-release">1980</span></p>
+            <p><strong>Label:</strong><span id="details-label">Epic</span></p>
+            <p><strong>Sales:</strong><span id="details-sales">26 million (50 million claimed)</span></p>
+          </div>
+          <div id="likes">Likes: <span id="likes-count">0</span></div>
+
+          <!--Edit and Delete are only for creator-->
+          <div id="action-buttons">
+            <a href="" id="like-btn">Like</a>
+            <a href="" id="edit-btn">Edit</a>
+            <a href="" id="delete-btn">Delete</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Edit Page (Only for logged-in users) -->
+      <section id="edit">
+        <div class="form">
+          <h2>Edit Album</h2>
+          <form class="edit-form">
+            <input type="text" name="singer" id="album-singer" placeholder="Singer/Band" />
+            <input type="text" name="album" id="album-album" placeholder="Album" />
+            <input type="text" name="imageUrl" id="album-img" placeholder="Image url" />
+            <input type="text" name="release" id="album-release" placeholder="Release date" />
+            <input type="text" name="label" id="album-label" placeholder="Label" />
+            <input type="text" name="sales" id="album-sales" placeholder="Sales" />
+
+            <button type="submit">post</button>
+          </form>
+        </div>
+      </section>
+
+
+    </main>
+  </div>
+  <footer>
+    <p>@MusicLibrary</p>
+  </footer>
+</body>
+
+</html>

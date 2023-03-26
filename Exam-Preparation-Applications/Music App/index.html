@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>My Music Application</title>
+    <link rel="stylesheet" href="/styles/style.css"/>
+</head>
+
+<body>
+
+    <div id="box">
+
+        <!--Navigation-->
+        <header>
+            <nav>
+                <img src="./images/headphones.png">
+                <a href="#">Home</a>
+                <ul>
+                    <!--All user-->
+                    <li><a href="#">Catalog</a></li>
+                    <li><a href="#">Search</a></li>
+                    <!--Only guest-->
+                    <li><a href="#">Login</a></li>
+                    <li><a href="#">Register</a></li>
+                    <!--Only user-->
+                    <li><a href="#">Create Album</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content"></main>
+
+        <!--Home Page-->
+        <section id="welcomePage">
+            <div id="welcome-message">
+                <h1>Welcome to</h1>
+                <h1>My Music Application!</h1>
+            </div>
+
+            <div class="music-img">
+                <img src="./images/musicIcons.webp">
+            </div>
+        </section>
+
+        <!--Login-->
+        <section id="loginPage">
+            <form>
+                <fieldset>
+                    <legend>Login</legend>
+
+                    <label for="email" class="vhide">Email</label>
+                    <input id="email" class="email" name="email" type="text" placeholder="Email">
+
+                    <label for="password" class="vhide">Password</label>
+                    <input id="password" class="password" name="password" type="password" placeholder="Password">
+
+                    <button type="submit" class="login">Login</button>
+
+                    <p class="field">
+                        <span>If you don't have profile click <a href="#">here</a></span>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
+        <!--Registration-->
+        <section id="registerPage">
+            <form>
+                <fieldset>
+                    <legend>Register</legend>
+
+                    <label for="email" class="vhide">Email</label>
+                    <input id="email" class="email" name="email" type="text" placeholder="Email">
+
+                    <label for="password" class="vhide">Password</label>
+                    <input id="password" class="password" name="password" type="password" placeholder="Password">
+
+                    <label for="conf-pass" class="vhide">Confirm Password:</label>
+                    <input id="conf-pass" class="conf-pass" name="conf-pass" type="password" placeholder="Confirm Password">
+
+                    <button type="submit" class="register">Register</button>
+
+                    <p class="field">
+                        <span>If you already have profile click <a href="#">here</a></span>
+                    </p>
+                </fieldset>
+            </form>
+        </section>
+
+        <!--Create Page-->
+        <section class="createPage">
+            <form>
+                <fieldset>
+                    <legend>Add Album</legend>
+
+                    <div class="container">
+                        <label for="name" class="vhide">Album name</label>
+                        <input id="name" name="name" class="name" type="text" placeholder="Album name">
+
+                        <label for="imgUrl" class="vhide">Image Url</label>
+                        <input id="imgUrl" name="imgUrl" class="imgUrl" type="text" placeholder="Image Url">
+
+                        <label for="price" class="vhide">Price</label>
+                        <input id="price" name="price" class="price" type="text" placeholder="Price">
+
+                        <label for="releaseDate" class="vhide">Release date</label>
+                        <input id="releaseDate" name="releaseDate" class="releaseDate" type="text" placeholder="Release date">
+
+                        <label for="artist" class="vhide">Artist</label>
+                        <input id="artist" name="artist" class="artist" type="text" placeholder="Artist">
+
+                        <label for="genre" class="vhide">Genre</label>
+                        <input id="genre" name="genre" class="genre" type="text" placeholder="Genre">
+
+                        <label for="description" class="vhide">Description</label>
+                        <textarea name="description" class="description" placeholder="Description"></textarea>
+
+                        <button class="add-album" type="submit">Add New Album</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <!--Catalog-->
+        <section id="catalogPage">
+            <h1>All Albums</h1>
+
+            <div class="card-box">
+                <img src="./images/BrandiCarlile.png">
+                <div>
+                    <div class="text-center">
+                        <p class="name">Name: In These Silent Days</p>
+                        <p class="artist">Artist: Brandi Carlile</p>
+                        <p class="genre">Genre: Low Country Sound Music</p>
+                        <p class="price">Price: $12.80</p>
+                        <p class="date">Release Date: October 1, 2021</p>
+                    </div>
+                    <div class="btn-group">
+                        <a href="#" id="details">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <img src="./images/pinkFloyd.jpg">
+                <div>
+                    <div class="text-center">
+                        <p class="name">Name: The Dark Side of the Moon</p>
+                        <p class="artist">Artist: Pink Floyd</p>
+                        <p class="genre">Genre: Rock Music</p>
+                        <p class="price">Price: $28.75</p>
+                        <p class="date">Release Date: March 1, 1973</p>
+                    </div>
+                    <div class="btn-group">
+                        <a href="#" id="details">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-box">
+                <img src="./images/Lorde.jpg">
+                <div>
+                    <div class="text-center">
+                        <p class="name">Name: Melodrama</p>
+                        <p class="artist">Artist: Lorde</p>
+                        <p class="genre">Genre: Pop Music</p>
+                        <p class="price">Price: $7.33</p>
+                        <p class="date">Release Date: June 16, 2017</p>
+                    </div>
+                    <div class="btn-group">
+                        <a href="#" id="details">Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--No albums in catalog-->
+            <p>No Albums in Catalog!</p>
+
+        </section>
+
+        <!--Edit Page-->
+        <section class="editPage">
+            <form>
+                <fieldset>
+                    <legend>Edit Album</legend>
+
+                    <div class="container">
+                        <label for="name" class="vhide">Album name</label>
+                        <input id="name" name="name" class="name" type="text" value="In These Silent Days">
+
+                        <label for="imgUrl" class="vhide">Image Url</label>
+                        <input id="imgUrl" name="imgUrl" class="imgUrl" type="text" value="./img/BrandiCarlile.png">
+
+                        <label for="price" class="vhide">Price</label>
+                        <input id="price" name="price" class="price" type="text" value="12.80">
+
+                        <label for="releaseDate" class="vhide">Release date</label>
+                        <input id="releaseDate" name="releaseDate" class="releaseDate" type="text" value="October 1, 2021">
+
+                        <label for="artist" class="vhide">Artist</label>
+                        <input id="artist" name="artist" class="artist" type="text" value="Brandi Carlile">
+
+                        <label for="genre" class="vhide">Genre</label>
+                        <input id="genre" name="genre" class="genre" type="text" value="Low Country Sound Music">
+
+                        <label for="description" class="vhide">Description</label>
+                        <textarea name="description" class="description" rows="10"
+                            cols="10">Upon release, In These Silent Days received positive reviews from critics. At Metacritic, which assigns a normalized rating out of 100 to reviews from mainstream critics, the album has an average score of 87 out of 100, which indicates 'universal acclaim'.</textarea>
+
+                        <button class="edit-album" type="submit">Edit Album</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+
+        <!--Details Page-->
+        <section id="detailsPage">
+            <div class="wrapper">
+                <div class="albumCover">
+                    <img src="./images/Lorde.jpg">
+                </div>
+                <div class="albumInfo">
+                    <div class="albumText">
+
+                        <h1>Name: Melodrama</h1>
+                        <h3>Artist: Lorde</h3>
+                        <h4>Genre: Pop Music</h4>
+                        <h4>Price: $7.33</h4>
+                        <h4>Date: June 16, 2017</h4>
+                        <p>Description: Melodrama is the second studio album by New Zealand singer-songwriter Lorde.
+                            It was released on 16 June 2017 by Lava and Republic Records and distributed through
+                            Universal.</p>
+                    </div>
+
+                    <!-- Only for registered user and creator of the album-->
+                    <div class="actionBtn">
+                        <a href="#" class="edit">Edit</a>
+                        <a href="#" class="remove">Delete</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--Search Page-->
+        <section id="searchPage">
+            <h1>Search by Name</h1>
+
+            <div class="search">
+                <input id="search-input" type="text" name="search" placeholder="Enter desired albums's name">
+                <button class="button-list">Search</button>
+            </div>
+
+            <h2>Results:</h2>
+
+            <!--Show after click Search button-->
+            <div class="search-result">
+                <!--If have matches-->
+                <div class="card-box">
+                    <img src="./images/BrandiCarlile.png">
+                    <div>
+                        <div class="text-center">
+                            <p class="name">Name: In These Silent Days</p>
+                            <p class="artist">Artist: Brandi Carlile</p>
+                            <p class="genre">Genre: Low Country Sound Music</p>
+                            <p class="price">Price: $12.80</p>
+                            <p class="date">Release Date: October 1, 2021</p>
+                        </div>
+                        <div class="btn-group">
+                            <a href="#" id="details">Details</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--If there are no matches-->
+                <p class="no-result">No result.</p>
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                &copy;SoftUni Team 2021. All rights reserved.
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
