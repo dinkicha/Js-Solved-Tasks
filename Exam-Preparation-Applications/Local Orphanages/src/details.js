@@ -19,30 +19,7 @@ let detailsTemplate = (orphanages, user, isOwner, canDonate, onDelete) => html`
                         <p class="post-number">Phone number: ${orphanages.phone}</p>
                         <p class="donate-Item">Donate Materials: 0</p>
 
-                        ${
-                          user != null
-                            ? html` <div class="btns">
-                                ${isOwner
-                                  ? html`<a
-                                        href="/edit/${orphanages._id}"
-                                        class="edit-btn btn"
-                                        >Edit</a
-                                      >
-                                      <a
-                                        @click=${onDelete}
-                                        href="javascript:void(0)"
-                                        class="delete-btn btn"
-                                        >Delete</a
-                                      >`
-                                  : nothing}
-                                ${canDonate
-                                  ? html`<a href="#" class="donate-btn btn"
-                                      >Donate</a
-                                    >`
-                                  : nothing}
-                              </div>`
-                            : nothing
-                        }
+                       
                     </div>
                 </div>
             </div>
