@@ -1,0 +1,46 @@
+<main>
+  <!-- Start Profile Details Section -->
+  <div class="profile">
+    <!-- Start Profile Personal Data Section -->
+    <div class="profile-data">
+      <div class="profile_img">
+        <div class="image">
+          <img src="/static/images/person.png" alt="img8" />
+        </div>
+      </div>
+      <div class="personal">
+        <div class="edit">
+          <!-- User Username -->
+          <p>{{user.username}}</p>
+        </div>
+        <div class="data">
+          <!-- Total Number of Photos by the User -->
+          <span>{{photos.length}}</span>
+          <p>photos</p>
+        </div>
+        <!-- User Email Address -->
+        <p class="email">{{user.email}}</p>
+      </div>
+    </div>
+
+    <div class="pet-photos">
+      {{#if photos}}
+        {{#each photos}}
+          <a href="/pets/{{_id}}/details">
+            <!-- Pet Photo -->
+            <img
+              src="{{image}}"
+              alt="pet img"
+            />
+          </a>
+        {{/each}}
+      {{else}}
+
+        <!--If there are no photo yet!-->
+        <article class="not-available-photo">
+          <h1>You haven't uploaded photos yet…</h1>
+        </article>
+      {{/if}}
+    </div>
+  </div>
+</main>

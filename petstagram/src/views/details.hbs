@@ -1,0 +1,98 @@
+<main>
+  <div class="container">
+    {{#with photo}}
+    <div class="col-9">
+      <!-- Start Pet Photo Post Section -->
+      <div class="card">
+        <div class="top">
+          <!-- Start User Details and Image Location Section -->
+          <div class="userDetails">
+            <!-- Link to User Profile Details Page-->
+            <div>
+              <div class="profilepic">
+                <div class="profile_img">
+                  <div class="image">
+                    <img src="/static/images/person.png" alt="img8" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3>
+              <!-- Link to User Profile Details Page -->
+              <p>
+                <!-- User's username -->
+                {{owner.username}}
+              </p>
+              <!-- photo's location -->
+              <span>{{location}}</span>
+
+              {{#if isCreator}}
+              <div class="edit-delete-btns">
+                <!-- Edit Pet Photo -->
+                <a href="/pets/{{_id}}/edit">
+                  <img
+                    class="edit-img"
+                    src="/static/images/edit-pen-icon-6.jpg"
+                    alt="edit button"
+                  />
+                </a>
+
+                <!--Delete Pet Photo -->
+                <a href="/pets/{{_id}}/delete">
+                  <img
+                    class="bin-img"
+                    src="/static/images/icon-remove-22.jpg"
+                    alt="bin button"
+                  />
+                </a>
+              </div>
+              {{/if}}
+            </h3>
+          </div>
+        </div>
+
+        <!-- Start Pet Photo -->
+        <div class="imgBx">
+          <!-- Pet Photo -->
+          <img src="{{image}}" alt="post" class="cover" />
+        </div>
+
+        <div class="bottom">
+          <p class="message">
+            <b class="petDescription">{{description}}</b>
+          </p>
+
+          <!-- Photo description -->
+          <div class="pet-details">
+            <p class="petName">Name: {{name}}</p>
+            <p class="petAge">Age: {{age}}</p>
+          </div>
+          <div class="comments">
+            <div class="comments-top">
+              {{#each commentList}}
+              {{> comment}}
+              {{/each}}
+            </div>
+          </div>
+        </div>
+        {{#if canComment}}
+        <div class="addComments">
+          <!-- Start Add Comments Form -->
+          <form method="post" action="/pets/{{_id}}/comment">
+            <textarea
+              id="comment-textarea"
+              name="comment"
+              cols="40"
+              rows="10"
+              placeholder="Add comment..."
+            ></textarea>
+            <!-- Post Comments Button -->
+            <button type="submit">Post</button>
+          </form>
+        </div>
+        {{/if}}
+      </div>
+    </div>
+    {{/with}}
+  </div>
+</main>

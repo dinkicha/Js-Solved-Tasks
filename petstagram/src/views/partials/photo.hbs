@@ -1,0 +1,36 @@
+ <div class="card">
+        <div class="top">
+          <div class="userDetails">
+            <div>
+              <div class="profilepic">
+                <div class="profile_img">
+                  <div class="image">
+                    <img src="/static/images/person.png" alt="img8" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3>
+              <p>
+                <!-- if user's username -->
+                {{owner.username}}
+                <br />
+                <!-- photo's location -->
+                <span>{{location}}</span>
+              </p>
+            </h3>
+          </div>
+        </div>
+        <!-- Post image -->
+        <div class="imgBx" id="place the id of the photo here">
+          <img src="{{image}}" alt="post" class="cover" />
+        </div>
+        <!-- Name of Pet -->
+        <h5 class="petName">Name: {{name}}</h5>
+        <!-- Age of Pet -->
+        <h5 class="petAge">Age: {{age}}</h5>
+        <!-- Link to Photo Details Page -->
+        <a href="/pets/{{_id}}/details" id="see-details">
+          <h4 class="details">See details</h4>
+        </a>
+      </div>
