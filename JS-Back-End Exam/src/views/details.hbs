@@ -1,0 +1,61 @@
+<main class="details">
+  {{#with animal}}
+    <section id="details">
+      <div id="details-wrapper">
+        <p id="details-title">Name: {{name}}</p>
+        <div id="img-wrapper">
+          <img src="{{image}}" />
+        </div>
+        <div id="info-wrapper">
+          <table>
+            <tr>
+              <td>
+                <p>
+                  Years:
+                  <span id="details-years">{{years}}</span>
+                </p>
+              </td>
+              <td>
+                <p>Kind: <span id="details-kind">{{kind}}</span></p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>Need of: <span id="details-need">{{need}}</span></p>
+              </td>
+              <td>
+                <p>Location: <span id="details-location">{{location}}</span></p>
+              </td>
+            </tr>
+          </table>
+          <p>Description:
+            <span id="details-description">Your donation goes a long way towards
+              our cause. Every dollar and item donated goes to the care of
+              lions, animals, and caretakers in urgent need, as well as
+              providing grants to exceptional sanctuaries, and emergency relief
+              efforts in the US and around the world. Tell us where you'd like
+              your gift to go and we will customize your introductory packet to
+              your preferences!</span></p>
+        </div>
+
+        {{#if isAuth}}
+          <div id="action-buttons">
+            {{#if isCreator}}
+              <a href="/animals/{{_id}}/edit" id="edit-btn">Edit</a>
+              <a href="/animals/{{_id}}/delete" id="delete-btn">Delete</a>
+            {{else}}
+              {{#if canDonate}}
+                <a
+                  href="/animals/{{_id}}/donation"
+                  id="donation-btn"
+                >Donation</a>
+              {{else}}
+                <p id="already-donated">You already donated!</p>
+              {{/if}}
+            {{/if}}
+          </div>
+        {{/if}}
+      </div>
+    </section>
+  {{/with}}
+</main>
