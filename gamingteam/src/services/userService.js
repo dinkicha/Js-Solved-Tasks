@@ -22,7 +22,6 @@ exports.register = async (username,email, password) => {
         password
     })
 
-    //Да го променя на изпита
     return user;
 };
 

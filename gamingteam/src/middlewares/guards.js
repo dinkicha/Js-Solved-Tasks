@@ -12,7 +12,7 @@ function hasUser() {
 function isGuest() {
     return (req, res, next) => {
         if (req.user) {
-            res.redirect('/404'); //Промени на изпита ако трябва
+            res.redirect('/404'); 
         } else {
             next();
         }

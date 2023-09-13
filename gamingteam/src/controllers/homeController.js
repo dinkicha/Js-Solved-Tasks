@@ -1,6 +1,5 @@
 const routes = require('express').Router();
 
-//Промени го на изпита
 routes.get('/',  (req, res) => {
 res.render('home', {
     title: 'Home Page',
