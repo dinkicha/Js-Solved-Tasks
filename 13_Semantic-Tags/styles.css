@@ -1,0 +1,26 @@
+body {
+background-color: #f9f7cf;
+ }
+main {
+margin-left: 15px;
+ }
+header {
+width: 490px;
+    
+background-color: #f2dcbb;
+    
+margin-left: 16px;
+    
+Padding: 15px; 
+}
+
+footer {
+width: 450px;
+    
+background-color: #f2dcbb;
+    
+margin-left: 13px;
+    
+Padding: 5px 15px; 
+}
+

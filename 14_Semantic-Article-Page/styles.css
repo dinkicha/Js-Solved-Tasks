@@ -1,0 +1,30 @@
+body {
+  background-color: #f2f4c0;
+}
+
+header {
+  width: 650px;
+  border: 1px solid #b2ad7d;
+  margin-left: 1px;
+  padding: 15px;
+}
+.firstArticle {
+  width: 660px;
+  border: 1px solid #b2ad7d;
+
+  margin: 15px 10px;
+  color: #4c7658;
+  margin-left: 1px;
+  padding: 10px;
+}
+
+.secondArticle {
+    width: 660px;
+    border: 1px solid #b2ad7d;
+  
+    margin: 15px 10px;
+    color: #4c7658;
+    margin-left: 1px;
+    padding: 10px;
+  }
+  

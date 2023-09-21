@@ -1,0 +1,19 @@
+main{
+background-color:  #f7f381;
+
+Padding: 8px 24px;
+
+Width: 250px;
+
+text-size-adjust: 30px;
+
+Border: 1px solid #f7f381;
+
+box-shadow: 0 0 10px 2px #333333;
+}
+ol{
+    margin: 12px;
+}
+p{
+    text-align: center;
+}
