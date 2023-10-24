@@ -1,0 +1,80 @@
+body {
+  font-family: Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 1200px;
+  height: 450px;
+  background-color: #1881b6;
+  border: 5px solid black;
+  border-radius: 1vh;
+  padding: 40px;
+  display: flex;
+  gap: 20px;
+}
+p {
+
+  line-height: 25px;
+  font-size: 18px;
+  text-indent: 40px;
+  line-height: 35px;
+}
+
+h1 {
+    color: white;
+  font-size: 42px;
+  font-weight: 200;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+.contacts{
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+
+}
+.contact {
+  border: 3px solid black;
+  background-color: #b6416d;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  padding: 10px 20px 10px 20px;
+  font-size: 8px;
+  cursor: pointer;
+  text-align: center;
+  font-size: large;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+}
+.learn {
+  border: 2px solid black;
+  background: transparent;
+  border-radius: 8px;
+  color: black;
+  display: block;
+  padding: 10px 20px 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  font-size: large;
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+}
+
+.text {
+  margin-top: 45px;
+}
+
+.image img {
+  width: 400px;
+  margin-right: 25px;
+  margin-top: 25px;
+}
